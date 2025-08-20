@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórias da Agda</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset do CSS */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+    separar{
+        opacity: 0;
+        color: #ffffff;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('/image.png');
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+    cima {
+    background-color: rgb(219, 216, 24);
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+    padding: 60px;
+    font-size: xx-large;
+    border-radius: 20px;
+    }
+    
+    conteudos {
+        display: block;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px 30px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        line-height: 1.8;
+        font-family: Arial, sans-serif;
+        color: #222;
+    }
+
+    conteudos h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    conteudos h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    conteudos p {
+        margin-bottom: 18px;
+        text-align: justify;
+    }
+
+    conteudos ul {
+        margin: 10px 0 20px 20px;
+    }
+
+    conteudos li {
+        margin-bottom: 6px;
+    }
+
+    conteudos hr {
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 20px 0;
+    }
+
+    rodape{
+        text-align: center;
+        padding: 15px;
+        background-color: #f4f4f4;
+        border-top: 1px solid #ddd;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    rodape a {
+        color: rgb(51, 51, 51);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        border: 2px solid rgb(219, 216, 24);
+        border-radius: 25px;
+        display: inline-block;
+    }
+
+    rodape a:hover {
+        background-color: rgb(219, 216, 24);
+        color: white;
+    }
+
+    /* ============================= */
+/* CSS Responsivo para Celulares  */
+/* ============================= */
+@media (max-width: 768px) {
+    /* Ajusta o conteúdo principal */
+    conteudos {
+        max-width: 95%;
+        padding: 15px 20px;
+        margin: 20px auto;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Títulos principais */
+    conteudos h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    /* Subtítulos */
+    conteudos h3 {
+        font-size: 17px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    /* Parágrafos */
+    conteudos p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Listas */
+    conteudos ul {
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    conteudos li {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    /* Cabeçalho */
+    cima {
+        padding: 40px 20px;
+        font-size: large;
+    }
+
+    cima h1 {
+        font-size: 26px;
+    }
+
+    cima h3 {
+        font-size: 16px;
+    }
+
+    /* Rodapé */
+    rodape {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    rodape a {
+        padding: 0.4rem 0.8rem;
+        font-size: 13px;
+    }
+}
+
+
+</style>
+
+<body>
+
+    <cima>    
+    <h1>Danilo Aprendendo História</h1>
+    <h4>Aprendo com a Agda e replico no meu site</h4>
+    </cima>
+
+    <separar><p>Separar espaços</p></separar>
+    
+    <conteudos>
+        <h1>📜 Conjuração Baiana (1798)</h1>
+        <hr>
+
+        <p>
+            Também chamada de <strong>Revolta dos Alfaiates</strong>, ocorreu na época em que o Brasil ainda era
+            colônia de Portugal. Salvador era uma das capitais mais importantes da colônia, mas passava por crise
+            econômica, aumento de impostos e desigualdade social.
+        </p>
+
+        <p>
+            A corte portuguesa ainda não tinha vindo para o Rio de Janeiro (isso só aconteceria em 1808).
+            Em 1798, a insatisfação era mais ligada à miséria e exploração em Salvador.
+        </p>
+
+        <h3>✨ Inspirações</h3>
+        <ul>
+            <li>Revolução Francesa (1789) — ideias de liberdade e igualdade.</li>
+            <li>Independência dos EUA (1776).</li>
+            <li>Revolução do Haiti (1791), conhecida pelos trabalhadores dos portos.</li>
+        </ul>
+
+        <h3>📢 O Movimento</h3>
+        <p>Em <strong>12 de agosto de 1798</strong>, começaram a circular <em>pasquins</em> (panfletos) manuscritos,
+            conclamando o povo a lutar por:</p>
+        <ul>
+            <li>Independência da Bahia (sem domínio português).</li>
+            <li>Fim da escravidão.</li>
+            <li>Aumento dos salários.</li>
+            <li>Igualdade entre brancos e negros.</li>
+        </ul>
+
+        <h3>⚖️ Repressão</h3>
+        <p>
+            A revolta foi denunciada antes de ganhar força. Os líderes mais associados foram alfaiates, soldados e pessoas humildes.
+        </p>
+        <p>Quatro alfaiates foram condenados à morte por enforcamento em praça pública:</p>
+        <ul>
+            <li>Lucas Dantas</li>
+            <li>Manuel Faustino</li>
+            <li>João de Deus</li>
+            <li>Luís Gonzaga</li>
+        </ul>
+
+        <p>
+            Eles tiveram destino parecido ao de Tiradentes (1789), mas a grande diferença é que a Conjuração Baiana foi
+            muito mais popular e com forte presença negra e de pessoas pobres.
+        </p>
+    </conteudos>
+
+    <rodape>
+        <p>Eu, Danilo, assisti a aula de História e repliquei nesse site, confirme as informações</p>
+        <p><a href="/index.html">Voltar aos conteúdos</a></p>
+    </rodape>
+    
+</body>
+</html>
