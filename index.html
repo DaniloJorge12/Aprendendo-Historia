@@ -4,145 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histórias da Agda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+        
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+        
+        .hover-grow {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-grow:hover {
+            transform: scale(1.05);
+        }
+        
+        .separator {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(219, 216, 24, 0.5), transparent);
+            margin: 2rem 0;
+        }
+    </style>
 </head>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+<body class="bg-gray-100 min-h-screen flex flex-col font-sans">
+    <!-- Header Section -->
+    <header class="bg-yellow-400 text-white py-16 px-4 md:px-16 rounded-b-3xl shadow-lg">
+        <div class="max-w-4xl mx-auto text-center animate-fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Danilo Aprendendo História</h1>
+            <h4 class="text-xl md:text-2xl font-medium">Aprendo com a Agda e replico no meu site</h4>
+        </div>
+    </header>
 
-/* Reset do CSS */
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-12">
+        <div class="bg-white rounded-3xl shadow-xl p-8 md:p-12 max-w-4xl mx-auto animate-fade-in delay-100">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Conteúdos</h2>
+            
+            <div class="separator"></div>
+            
+            <div class="space-y-6">
+                <div class="hover-grow">
+                    <a href="conjuracao_baiana.html" class="inline-block border-2 border-yellow-400 text-gray-800 font-bold px-6 py-3 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-white">
+                        Conjuração Baiana
+                    </a>
+                </div>
+                
+                <div class="hover-grow delay-200">
+                    <a href="Segunda_Revolução.html" class="inline-block border-2 border-yellow-400 text-gray-800 font-bold px-6 py-3 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-white">
+                        Segunda Revolução Industrial
+                    </a>
+                </div>
+                
+                <div class="hover-grow delay-300">
+                    <a href="Primavera_dos_povos.html" class="inline-block border-2 border-yellow-400 text-gray-800 font-bold px-6 py-3 rounded-full transition-colors duration-300 hover:bg-yellow-400 hover:text-white">
+                        Primavera dos Povos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-/* Configurações gerais */
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-    separar{
-        opacity: 0;
-        color: #ffffff;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        background-image: url('image.png');
-        color: #333;
-        margin: 0;
-        padding: 20px;
-    }
-    cima {
-    background-color: rgb(219, 216, 24);
-    color: rgb(255, 255, 255);
-    font-family: "Poppins", sans-serif;
-    padding: 60px;
-    font-size: xx-large;
-    border-radius: 20px;
-    }
-
-    conteudos {
-    display: block;
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    margin: 0 auto 60px auto;
-    padding: 40px;
-    border-radius: 40px;
-    }
-
-    conteudos a {
-    color: rgb(51, 51, 51);
-    text-decoration: none;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    border: 2px solid rgb(219, 216, 24);
-    border-radius: 25px;
-    display: inline-block;
-    }
-
-    conteudos a:hover {
-        background-color: rgb(219, 216, 24);
-        color: white;
-    }
-
-    /* ======================= */
-/* Responsividade          */
-/* ======================= */
-@media screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    cima {
-        padding: 30px 15px;
-        font-size: large;
-    }
-
-    conteudos {
-        width: 95%;
-        padding: 20px;
-        border-radius: 20px;
-    }
-
-    conteudos h1 {
-        font-size: 1.5rem;
-        word-wrap: break-word;
-    }
-
-    conteudos h2 {
-        font-size: 1.2rem;
-    }
-
-    conteudos a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
-    }
-
-    cima h1 {
-        font-size: 1.5rem;
-    }
-
-    cima h4 {
-        font-size: 1rem;
-    }
-}
-
-
-</style>
-
-<body>
-
-    <cima>    
-    <h1>História Cap. 5</h1>
-    <h4>Aprendo com a Agda e replico no meu site</h4>
-    </cima>
-
-    <separar><p>Separar espaços</p></separar>
-    
-    <conteudos>
-        <h2>Conteúdos</h2>
-        <h1>---------------</h1>
-        <p>
-            <a href="conjuracao_baiana.html">Conjuração Baiana</a>
+    <!-- Footer -->
+    <footer class="py-8 text-center">
+        <p class="animate-fade-in delay-300">
+            <a href="https://danilojorge12.github.io/Estudando-Geografia" class="text-yellow-600 hover:text-yellow-700 font-medium underline">
+                Prova de Geografia? Clique aqui
+            </a>
         </p>
-        <p>
-            <a href="Segunda_Revolução.html"> Segunda Revolução Industrial</a>
-        </p>
-        <p>
-            <a href="Primavera_dos_povos.html"> Primavera dos Povos</a>
-        </p>
-        <p>
-            <a href="Coluna_de_Paris.html"> Coluna de Paris</a>
-        </p>
-    </conteudos>
-
-    <p id="voltar"><a href="https://danilojorge12.github.io/Estudando-Geografia">Prova de Geografia? Clique aqui</a></p>
-
+    </footer>
 </body>
 </html>
-
